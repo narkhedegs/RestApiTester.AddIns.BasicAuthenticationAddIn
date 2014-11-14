@@ -7,8 +7,8 @@
     <ProjectGuid>{9F5E4879-F246-4E3F-BEA4-70E1F1B8733E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BasicAuthenticationAddIn.Specifications</RootNamespace>
-    <AssemblyName>BasicAuthenticationAddIn.Specifications</AssemblyName>
+    <RootNamespace>RestApiTester.AddIns.Specifications</RootNamespace>
+    <AssemblyName>RestApiTester.AddIns.BasicAuthenticationAddIn.Specifications</AssemblyName>
     <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -30,6 +30,18 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Moq">
+      <HintPath>..\packages\Moq.4.2.1409.1722\lib\net40\Moq.dll</HintPath>
+    </Reference>
+    <Reference Include="NSpec">
+      <HintPath>..\packages\nspec.0.9.68\lib\NSpec.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework">
+      <HintPath>..\packages\NUnit.2.6.3\lib\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="RestApiTester.Common">
+      <HintPath>..\packages\RestApiTester.Common.0.14.0.0\lib\net451\RestApiTester.Common.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -39,7 +51,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="basic_authentication_addin_specifications.cs" />
+    <Compile Include="Helpers\DebuggerShim.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BasicAuthenticationAddIn\BasicAuthenticationAddIn.csproj">
+      <Project>{9a1a8ace-9b9d-4a7c-9117-fd3280a9222e}</Project>
+      <Name>BasicAuthenticationAddIn</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

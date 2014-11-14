@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>RestApiTester.AddIns.BasicAuthenticationAddIn</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>Gaurav Narkhede</authors>
+    <owners>Gaurav Narkhede</owners>
+    <licenseUrl>https://raw.githubusercontent.com/narkhedegs/RestApiTester.AddIns.BasicAuthenticationAddIn/master/LICENSE.md</licenseUrl>
+    <projectUrl>https://github.com/narkhedegs/RestApiTester.AddIns.BasicAuthenticationAddIn</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/narkhedegs/RestApiTester.AddIns.BasicAuthenticationAddIn/master/icon.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Basic Authentication AddIn for Restler.</description>
+    <releaseNotes></releaseNotes>
+    <copyright>Copyright © 2014 Gaurav Narkhede&lt;narkhedegs@gmail.com&gt;</copyright>
+    <tags>Basic Authentication Restler RestApiTester</tags>
+  </metadata>
+</package>
